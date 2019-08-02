@@ -1,0 +1,179 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.clr{
+  clear: both;
+}
+body{
+  background-color:lightgray;
+}
+#header{
+  background:gray;
+  position:fixed;
+  width:100%;
+  top:0;
+}
+#header::after{
+  content:" ";
+  display:table;
+  clear:both;
+}
+#nav-bar{
+  float:right;
+}
+#nav-bar ul{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+#nav-bar li{
+  display:inline-block;
+  margin:20px;
+}
+#nav-bar li a{
+  text-decoration: none;
+  color:black;
+  text-transform: uppercase;
+  padding:20px;
+}
+#nav-bar li a:hover{
+  background-color:lightgray;
+}
+#header-img{
+  float:left;
+  width:300px;
+  padding:15px;
+}
+#main-header{
+  text-align:center;
+  margin-top:90px;
+}
+#main-header #form{
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+input[type="email"]{
+  width:250px;
+  height:30px;
+  border-radius:2px;
+}
+#submit{
+  border:none;
+  margin-top:10px;
+  padding:10px;
+  background-color:orange;
+  cursor: pointer;
+  font-weight: 900;
+  text-transform:uppercase;
+  border-radius:5px;
+}
+#main-content{
+  width:95%;
+  margin:auto;
+}
+.container{
+  max-width:90%;
+  margin:0 0 50px 250px;
+  display:flex;
+}
+.box-1{
+  width:10%;
+}
+.box-2{
+  width:90%;
+}
+
+.fa {
+  color: orange;
+} 
+
+#video{
+  display:block;
+  margin: 30px auto;
+  width:400px;
+  height:auto;
+}
+#pricing{
+  width:80%;
+  margin:auto;
+  height:150px;
+  
+}
+#pricing .pricing-1{
+  width:30%;
+  height:auto;
+  margin:3px;
+  float:left;
+  border:1px solid black;
+  text-align:center;
+}
+.pricing-1 h4{
+  padding: 15px;
+  background-color:gray;
+}
+.pricing-1 #price-content{
+  max-width:150px;
+  margin:auto;
+  line-height: 1.6em;
+  font-size: 20px;
+}
+
+@media (max-width:1200px){
+  .container{
+    max-width:100%;
+    margin:0 0 30px 100px;
+  }
+  .box-1{
+    width:15%;
+  }
+  .box-2{
+    width:85%;
+  }
+  #pricing .pricing-1{
+    float:none;
+    margin:auto;
+    min-width:300px
+  }
+}
+  
+@media (max-width:600px){
+  .box-2{
+    width:100%;
+  }
+  .box-2 p,h1{
+    text-align: center;
+  }
+  .box-1{
+    display:none;
+  }
+  .container{
+    max-width:100%;
+    margin:0 0 30px 0;
+  } 
+}
+
+@media (max-width:850px){
+  #main-header{
+    margin-top:40px;
+  }
+  #header{
+    position:relative;
+  }
+}
+@media (max-width:600px){
+  #nav-bar li{
+    display:block;
+  }
+  #nav-bar ul{
+    margin-left:150px;
+  }
+  #nav-bar, #header-img{
+    float: none;
+    display:block;
+    margin:auto;
+  }
+}
+
+
